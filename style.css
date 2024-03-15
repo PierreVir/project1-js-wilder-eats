@@ -1,0 +1,90 @@
+/* Code Couleurs de la Wilder-Eats Page 
+
+#F8DCA6 = jaune claire - Background du site
+#E26D5C = Orange foncé
+#8B7B5D = 
+
+// Cards colors
+#EEAC86 = Orange Clair
+ou 
+#A4716A = 
+
+// Barre de Nav Color
+
+#E26D5C = Orange 
+*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #F8DCA6;
+}
+
+.nav {
+    background-color: #E26D5C ;
+    height: 20vh;
+    width: 100vw;
+}
+
+/* main - Card */
+
+
+.cards {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.box1, .box2, .box3, .box4 {
+    height: 299px;
+    width: 358px;
+    margin-bottom: 20px;
+    background-color:  #E26D5C;
+    border-radius: 20px;
+    box-shadow: 1px 3px 3px 1px black;
+}
+
+
+.poele{
+    display: flex;
+    justify-content: flex-end;
+}
+
+input{
+    border-radius: 5px;
+    width: 250px;
+}
+
+.img{
+    width: 50px;
+    height: 50px;
+    /*transform: rotate(-8deg);*/
+/* Inside auto layout */
+}
+
+
+
+@media screen and (max-width: 320px) { 
+    .card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) { 
+    .card {
+
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { 
+    .card {   
+
+    }
+}
