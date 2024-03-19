@@ -1,97 +1,90 @@
-/* Code Couleurs de la Wilder-Eats Page 
-
-#F8DCA6 = jaune claire - Background du site
-#E26D5C = Orange foncé
-#8B7B5D = 
-
-// Cards colors
-#EEAC86 = Orange Clair
-ou 
-#A4716A = 
-
-// Barre de Nav Color
-
-#E26D5C = Orange 
-*/
-
 :root {
-    --main-color: #FBDFA8;
-    --secondary-color: #E26D5C;
-    --tertiary-color: #EEAC86;
-    --text-color: #000000;
-    --internal-padding: 2rem;
+  --main-color: #fbdfa8;
+  --secondary-color: #e26d5c;
+  --tertiary-color: #eeac86;
+  --text-color: #000000;
+  --internal-padding: 2rem;
 }
 
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-
 body {
-    background-color: #F8DCA6;
+  background-color: #f8dca6;
 }
 
 .nav {
-    background-color: #E26D5C;
-    height: 20vh;
-    width: 100vw;
+  background-color: #e26d5c;
+  height: 20vh;
+  width: 100vw;
 }
 
 /* main - Card */
 
-
 .cards {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .box1,
 .box2,
 .box3,
 .box4 {
-    height: 299px;
-    width: 358px;
-    margin-bottom: 20px;
-    background-color: #E26D5C;
-    border-radius: 20px;
-    box-shadow: 1px 3px 3px 1px black;
+  height: 299px;
+  width: 358px;
+  margin-bottom: 20px;
+  background-color: #e26d5c;
+  border-radius: 20px;
+  box-shadow: 1px 3px 3px 1px black;
 }
 
-
 .poele {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 input {
-    border-radius: 5px;
-    width: 250px;
+  border-radius: 5px;
+  width: 250px;
 }
 
 .img {
-    width: 50px;
-    height: 50px;
-    /*transform: rotate(-8deg);*/
-    /* Inside auto layout */
+  width: 50px;
+  height: 50px;
+  /*transform: rotate(-8deg);*/
+  /* Inside auto layout */
 }
 
-
-
-@media screen and (max-width: 320px) {
-    .card {
-        width: 100%;
-        height: auto;
-    }
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
-    .card {}
+.modal {
+  border-radius: 2em;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  & img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .card {}
+.secondInput {
+  height: 300px;
 }
