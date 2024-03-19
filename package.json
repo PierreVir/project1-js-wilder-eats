@@ -1,0 +1,19 @@
+{
+  "name": "project1-js-wilder-eats",
+  "version": "1.0.0",
+  "description": "project 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate": "html-validator docs index.html",
+    "prepare": "husky"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "w3c-html-validator": "^1.7.0"
+  },
+  "dependencies": {
+    "husky": "^9.0.11"
+  }
+}
