@@ -14,7 +14,15 @@ ou
 #E26D5C = Orange 
 */
 
-*{
+:root {
+    --main-color: #FBDFA8;
+    --secondary-color: #E26D5C;
+    --tertiary-color: #EEAC86;
+    --text-color: #000000;
+    --internal-padding: 2rem;
+}
+
+* {
     margin: 0;
     box-sizing: border-box;
 }
@@ -26,7 +34,7 @@ body {
 }
 
 .nav {
-    background-color: #E26D5C ;
+    background-color: #E26D5C;
     height: 20vh;
     width: 100vw;
 }
@@ -38,53 +46,52 @@ body {
     margin: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
-.box1, .box2, .box3, .box4 {
+.box1,
+.box2,
+.box3,
+.box4 {
     height: 299px;
     width: 358px;
     margin-bottom: 20px;
-    background-color:  #E26D5C;
+    background-color: #E26D5C;
     border-radius: 20px;
     box-shadow: 1px 3px 3px 1px black;
 }
 
 
-.poele{
+.poele {
     display: flex;
     justify-content: flex-end;
 }
 
-input{
+input {
     border-radius: 5px;
     width: 250px;
 }
 
-.img{
+.img {
     width: 50px;
     height: 50px;
     /*transform: rotate(-8deg);*/
-/* Inside auto layout */
+    /* Inside auto layout */
 }
 
 
 
-@media screen and (max-width: 320px) { 
+@media screen and (max-width: 320px) {
     .card {
         width: 100%;
         height: auto;
     }
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) { 
-    .card {
-
-    }
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    .card {}
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) { 
-    .card {   
-
-    }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .card {}
 }
