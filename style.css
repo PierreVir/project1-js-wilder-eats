@@ -62,6 +62,45 @@ main {
 }
 
 
+#buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #E26D5C;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.restaurant {
+  height: 299px;
+  width: 358px;
+  margin-bottom: 20px;
+  background-color:  #E26D5C;
+  border-radius: 20px;
+  box-shadow: 1px 3px 3px 1px black;
+}
+
+
 #logo {
     width: 45px;
     height: 45px;
@@ -187,6 +226,9 @@ input {
     /*transform: rotate(-8deg);*/
     /* Inside auto layout */
 }
+.aboutUs {
+  padding-block: 1rem;
+}
 
 .botBar {
     background-color: #E26D5C;
@@ -195,6 +237,7 @@ input {
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
 
 
 /**********************************/
@@ -231,15 +274,7 @@ input {
   align-items: center;
   gap: 0.5em;
 }
-.aboutUs {
-  padding-block: 1rem;
-}
 
-footer {
-  height: 10vh;
-  width: 100vw;
-  background-color: var(--secondary-color);
-}
 
 .placeholder-title {
   position: absolute;
@@ -254,9 +289,6 @@ footer {
   & input {
     padding-left: 1em;
   }
-
-
-}
 
   & input::placeholder {
     color: #00000075;
@@ -382,10 +414,6 @@ footer {
         width: 90%;
         height: auto;
     }
-
-
-
-
 }
 
 @media screen and (min-width: 321px) and (max-width: 768px) {
@@ -439,3 +467,4 @@ footer {
         width: 90%;
         height: auto;
     }
+  }
