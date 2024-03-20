@@ -12,85 +12,186 @@
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   background-color: #f8dca6;
 }
 
-.nav {
-  background-color: #e26d5c;
-  height: 20vh;
-  width: 100vw;}
 h2 {
-    color: var(--secondary-color);
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
+  color: var(--secondary-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
 }
 
 .aboutUs h2 {
-    text-align: left;
+  text-align: left;
 }
 
 .map h2 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .nav img {
-    height: 64px
+  height: 64px;
 }
 
 .featuredRestaurant h2,
 .map h2,
 .aboutUs h2 {
-    font-size: 3rem;
-    font-weight: 300;
+  font-size: 3rem;
+  font-weight: 300;
 }
 
 .quote {
-    padding-block: 1rem;
+  padding-block: 1rem;
 }
 
 .quote p {
-    text-align: center;
-    padding-block: 1rem;
+  text-align: center;
+  padding-block: 1rem;
 }
-
 
 main {
-    background-color: var(--main-color);
-    padding-inline: 1rem;
+  background-color: var(--main-color);
+  padding-inline: 1rem;
 }
 
-.nav {
-    background-color: var(--secondary-color);
-    height: 20vh;
+
+#buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #E26D5C;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.restaurant {
+  height: 299px;
+  width: 358px;
+  margin-bottom: 20px;
+  background-color:  #E26D5C;
+  border-radius: 20px;
+  box-shadow: 1px 3px 3px 1px black;
+}
+
+
+#logo {
+    width: 45px;
+    height: 45px;
+    margin-left: 1%;
+}
+
+#nav {
+    background-color: #E26D5C;
+    height: 8vh;
     width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(0.5rem + 1vw);
+}
+
+#icons {
+    cursor: pointer;
+    color: #F8DCA6;
+    margin-bottom: 5px;
+}
+
+ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 60%;
+    padding-left: 0;
+
 }
 
-.poele {
-    height: 32px;
+li {
+    list-style: none;
 }
 
-.mapImage {
-    height: 16rem;
-    width: 100%;
-    background-image: url(img/city_map_by_torstan.jpg);
-    border-radius: 12px;
-    box-shadow: inset 0 4 4 0;
+a,
+a:visited {
+    color: #F8DCA6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EEAC86;
+}
+
+h1 {
+    padding: auto;
+    color: #F8DCA6;
+}
+
+h2 {
+    color: #E26D5C;
+    padding: 16px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border-radius: 30px;
+}
+
+input {
+    contain: "\2622";
 }
 
 
 /* main - Card */
 
-/* .cards {
+.mapImage {
+  height: 16rem;
+  width: 100%;
+  background-image: url(img/city_map_by_torstan.jpg);
+  border-radius: 12px;
+  box-shadow: inset 0 4 4 0;
+}
+
+
+/* main - Card */
+
+.cards {
+
   margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .box1,
@@ -103,29 +204,41 @@ main {
   background-color: #e26d5c;
   border-radius: 20px;
   box-shadow: 1px 3px 3px 1px black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .box1 {
-    height: 299px;
-    width: 358px;
-    margin-bottom: 20px;
-    background-color: var(--tertiary-color);
-    border-radius: 20px;
-    box-shadow: 1px 3px 3px 1px black;
+  height: 299px;
+  width: 358px;
+  margin-bottom: 20px;
+  background-color: var(--tertiary-color);
+  border-radius: 20px;
+  box-shadow: 1px 3px 3px 1px black;
 }
 
-.poele {
-  display: flex;
-  justify-content: flex-end;
-}
 
 .img {
-  width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
+    /*transform: rotate(-8deg);*/
+    /* Inside auto layout */
 }
+.aboutUs {
+  padding-block: 1rem;
+}
+
+.botBar {
+    background-color: #E26D5C;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
 
 /**********************************/
 /* Here start the modal's css */
@@ -139,6 +252,7 @@ main {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+
 }
 
 .modal {
@@ -159,15 +273,6 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 0.5em;
-}
-.aboutUs {
-    padding-block: 1rem;
-}
-
-footer {
-    height: 10vh;
-    width: 100vw;
-    background-color: var(--secondary-color);
 }
 
 
@@ -259,12 +364,7 @@ footer {
   height: 150px;
   width: 100%;
   border-radius: 1em;
-  object-fit: cover;}
-/* @media screen and (max-width: 320px) {
-    .card {
-        width: 100%;
-        height: auto;
-    }
+  object-fit: cover;
 }
 
 .heart-icon {
@@ -278,6 +378,93 @@ footer {
 /**********************************/
 /* Here end the modal's css */
 /**********************************/
-/* @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .card {}
-}  */
+@media screen and (max-width: 320px) {
+
+    #nav {
+        justify-content: space-around;
+    }
+
+    nav ul {
+        position: fixed;
+        left: -100%;
+        top: 2vh;
+        transition: 0.25s;
+    }
+
+    #logo {
+        margin: 0;
+    }
+
+    #icons {
+        display: block;
+
+    }
+
+    #icons::before {
+        content: "\2630";
+        font-size: 2rem;
+    }
+
+    .active #icons::before {
+        left: 0;
+        content: "\2715";
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+
+
+    #nav {
+        justify-content: space-around;
+    }
+
+    nav ul {
+        position: fixed;
+        left: -100%;
+        top: 7.9vh;
+        transition: 0.25s;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #E26D5C;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        height: 40%;
+
+    }
+
+    #logo {
+        margin: 0;
+    }
+
+    #icons {
+        display: block;
+        padding-top: 0;
+
+    }
+
+    #icons:before {
+        content: "\2630";
+        font-size: 2.2rem;
+
+    }
+
+    .active #icons:before {
+        left: 0;
+        content: "\2715";
+    }
+
+    .active ul {
+        left: 0;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+  }

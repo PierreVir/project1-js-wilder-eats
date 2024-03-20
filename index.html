@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,25 +9,35 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+     <link rel="icon" type="image/vnd.icon" href="logo-copy.ico">
     <title> Wilder-Eats || Manger Bien et pas loin </title>
 </head>
 
 <body>
     <header>
-        <nav class="nav">
-            <img class="logo" alt="logo wilder eats" src="img/Official_logo_soon.png">
-            <div class="poele">
-                <input type="search">
-                <img src="/img/poele.png" alt="" srcset="img/poele.png">
-            </div>
+   <nav id="nav">
 
-        </nav>
-    </header>
+      <img src="logo.png" alt="logo" id="logo">
 
-    <div class="poele">
-        <input type="search">
-        <img src="/img/poele.png" alt="poele avec oeuf" srcset="">
-    </div>
+      <h1>Wilder Eats</h1>
+      <ul>
+        <li>
+          <a href="#">Accueil</a>
+        </li>
+        <li>
+          <a href="#">A propos</a>
+        </li>
+        <li>
+          <a href="#">Map</a>
+        </li>
+        <li>
+          <a href="#">Restaurants</a>
+        </li>
+      </ul>
+      <div id="icons"></div>
+    </nav>
+  </header>
+
     <main>
         <section class="quote">
             <h2>Mangez bien et pas loin</h2>
@@ -47,10 +55,6 @@
 
             </div>
         </section>
-        <div class="filterSlider">
-            <button class="filterButton">Filter</button>
-
-
     <div id="buttons">
         <button class="btn" onclick="filterRestaurant('all')">Tous</button>
         <button class="btn" onclick="filterRestaurant('Burgers')">Burgers</button>
@@ -94,16 +98,10 @@
                 Bon appétit, les Wilders ! À la table de l'aventure, il y a toujours une place pour plus de saveur.</p>
 
         </section>
-
-
-        <div class="box3"></div>
-
-        <div class="box4"></div>
       </section>
       <section class="restaurantsReview"></section>
       <section class="aboutUs"></section>
     </main>
-    <div class="overlay"></div>
     <div class="modal">
       <div class="img-container-modal">
         <img class="img-modal" src="img/img1.jpeg" alt="" />
@@ -148,7 +146,10 @@
       </div>
     </div>
 
-    <footer></footer>
+        <footer>
+          <nav class="botBar"></nav>
+        </footer>
+
 
 
     <script src="filter.js"></script>
