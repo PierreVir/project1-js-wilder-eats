@@ -61,21 +61,79 @@ main {
   padding-inline: 1rem;
 }
 
-.nav {
-  background-color: var(--secondary-color);
-  height: 20vh;
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #e26d5c;
-  height: 20vh;
-  width: 100vw;
+
+#logo {
+    width: 45px;
+    height: 45px;
+    margin-left: 1%;
 }
 
-.poele {
-  height: 32px;
+#nav {
+    background-color: #E26D5C;
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(0.5rem + 1vw);
 }
+
+#icons {
+    cursor: pointer;
+    color: #F8DCA6;
+    margin-bottom: 5px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+    padding-left: 0;
+
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    color: #F8DCA6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EEAC86;
+}
+
+h1 {
+    padding: auto;
+    color: #F8DCA6;
+}
+
+h2 {
+    color: #E26D5C;
+    padding: 16px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border-radius: 30px;
+}
+
+input {
+    contain: "\2622";
+}
+
+
+/* main - Card */
 
 .mapImage {
   height: 16rem;
@@ -85,13 +143,16 @@ main {
   box-shadow: inset 0 4 4 0;
 }
 
+
 /* main - Card */
 
 .cards {
+
   margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .box1,
@@ -107,6 +168,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .box1 {
@@ -118,15 +180,22 @@ main {
   box-shadow: 1px 3px 3px 1px black;
 }
 
-.poele {
-  display: flex;
-  justify-content: flex-end;
-}
 
 .img {
-  width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
+    /*transform: rotate(-8deg);*/
+    /* Inside auto layout */
 }
+
+.botBar {
+    background-color: #E26D5C;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 
 /**********************************/
 /* Here start the modal's css */
@@ -140,6 +209,7 @@ main {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+
 }
 
 .modal {
@@ -184,6 +254,9 @@ footer {
   & input {
     padding-left: 1em;
   }
+
+
+}
 
   & input::placeholder {
     color: #00000075;
@@ -273,3 +346,96 @@ footer {
 /**********************************/
 /* Here end the modal's css */
 /**********************************/
+@media screen and (max-width: 320px) {
+
+    #nav {
+        justify-content: space-around;
+    }
+
+    nav ul {
+        position: fixed;
+        left: -100%;
+        top: 2vh;
+        transition: 0.25s;
+    }
+
+    #logo {
+        margin: 0;
+    }
+
+    #icons {
+        display: block;
+
+    }
+
+    #icons::before {
+        content: "\2630";
+        font-size: 2rem;
+    }
+
+    .active #icons::before {
+        left: 0;
+        content: "\2715";
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+
+
+    #nav {
+        justify-content: space-around;
+    }
+
+    nav ul {
+        position: fixed;
+        left: -100%;
+        top: 7.9vh;
+        transition: 0.25s;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #E26D5C;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        height: 40%;
+
+    }
+
+    #logo {
+        margin: 0;
+    }
+
+    #icons {
+        display: block;
+        padding-top: 0;
+
+    }
+
+    #icons:before {
+        content: "\2630";
+        font-size: 2.2rem;
+
+    }
+
+    .active #icons:before {
+        left: 0;
+        content: "\2715";
+    }
+
+    .active ul {
+        left: 0;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
