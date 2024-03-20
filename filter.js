@@ -11,3 +11,4 @@ function filterRestaurant(type) {
         }
     });
 }
+

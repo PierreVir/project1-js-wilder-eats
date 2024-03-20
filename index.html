@@ -58,8 +58,27 @@
           <button class="filterButton">Filter</button>
 
 
+          <div id="buttons">
+            <button class="btn" onclick="filterRestaurant('all')">Tous</button>
+            <button class="btn" onclick="filterRestaurant('Burgers')">Burgers</button>
+            <button class="btn" onclick="filterRestaurant('Sushi')">Sushi</button>
+            <button class="btn" onclick="filterRestaurant('Asiatique')">Asiatique</button>
+            <button class="btn" onclick="filterRestaurant('indien')">Indien</button>
+          </div>
 
         </div>
+
+        <div class="restaurants">
+          <div class="restaurant Burgers">Burgers</div>
+          <div class="restaurant Sushi">Sushi</div>
+          <div class="restaurant chinois"></div>
+          <div class="restaurant Asiatique">Restaurant Asiatique</div>
+          <div class="restaurant Autres">Autres</div>
+          <div class="restaurant chinois">Restaurant Chinois 2</div>
+          <div class="restaurant indien">Restaurant Indien 1</div>
+          <div class="restaurant indien">Restaurant Indien 2</div>
+        </div>
+
 
         <div class="restaurantCards">
           <div class="box1">
@@ -122,7 +141,9 @@
   <footer>
   </footer>
 
-  <script src="index.js"></script>
+
+
+  <script src="./index.js"></script>
 </body>
 
 </html>
