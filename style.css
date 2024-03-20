@@ -4,6 +4,7 @@
   --tertiary-color: #eeac86;
   --text-color: #000000;
   --internal-padding: 2rem;
+  --placeholder: #00000075;
 }
 
 * {
@@ -50,9 +51,11 @@ body {
 .img {
   width: 50px;
   height: 50px;
-  /*transform: rotate(-8deg);*/
-  /* Inside auto layout */
 }
+
+/**********************************/
+/* Here start the modal's css */
+/**********************************/
 
 .overlay {
   position: fixed;
@@ -68,6 +71,7 @@ body {
   border-radius: 2em;
   padding: 1em;
   margin: 20px;
+  background-color: var(--tertiary-color);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -83,10 +87,22 @@ body {
   gap: 0.5em;
 }
 
+.placeholder-title {
+  position: absolute;
+  top: 4%;
+  left: 13%;
+  color: var(--placeholder);
+  font-family: Arial;
+}
+
 .firstInput-container {
   width: 100%;
   & input {
     padding-left: 1em;
+  }
+
+  & input::placeholder {
+    color: #00000075;
   }
 }
 .secondInput-container {
@@ -114,14 +130,24 @@ body {
 }
 
 .firstInput {
-  width: 50%;
-  border-radius: 1em;
+  width: 40%;
+  border-radius: 8px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .secondInput {
   height: 150px;
   border-radius: 1em;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: 100%;
+  padding-left: 1em;
+  padding-top: 2em;
+}
+
+.secondInput:active {
+  margin-bottom: 3em;
 }
 
 .btn-right {
@@ -159,3 +185,7 @@ body {
   top: 5%;
   right: 5%;
 }
+
+/**********************************/
+/* Here end the modal's css */
+/**********************************/
