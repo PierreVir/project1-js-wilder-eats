@@ -26,13 +26,16 @@ body {
     background-color: #F8DCA6;
 }
 
+/* navbar start */
+
 #logo {
-    width: 45px;
-    height: 45px;
-    margin-left: 1%;
+    width: 50px;
+    height: 50px;
+    margin-left: 1vw;
 }
 
 #nav {
+    position: fixed;
     background-color: #E26D5C;
     height: 8vh;
     width: 100vw;
@@ -40,6 +43,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: calc(0.5rem + 1vw);
+    padding-right: 2rem;
 }
 
 #icons {
@@ -59,6 +63,10 @@ ul {
 
 li {
     list-style: none;
+}
+
+a {
+    padding-inline: 5vw;
 }
 
 a,
@@ -88,14 +96,12 @@ form {
     align-items: center;
 }
 
-input {
-    border-radius: 30px;
+
+main {
+    padding-top: 8vh;
 }
 
-input {
-    contain: "\2622";
-}
-
+/* navbar end */
 
 /* main - Card */
 
@@ -151,9 +157,6 @@ input {
         transition: 0.25s;
     }
 
-    #logo {
-        margin: 0;
-    }
 
     #icons {
         display: block;
@@ -202,9 +205,7 @@ input {
 
     }
 
-    #logo {
-        margin: 0;
-    }
+
 
     #icons {
         display: block;
@@ -231,8 +232,5 @@ input {
         width: 90%;
         height: auto;
     }
-
-
-
 
 }
