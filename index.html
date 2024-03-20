@@ -1,48 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title> Wilder-Eats || Manger Bien et pas loin </title>
+    <link rel="icon" type="image/vnd.icon" href="logo-copy.ico">
+    <title> Wilder-Eats</title>
 </head>
+
 <body>
     <header>
-        <nav class="nav">
+        <nav id="nav">
 
+            <img src="logo.png" alt="logo" id="logo">
+
+            <h1>Wilder Eats</h1>
+            <ul>
+                <li>
+                    <a href="#">Accueil</a>
+                </li>
+                <li>
+                    <a href="#">A propos</a>
+                </li>
+                <li>
+                    <a href="#">Map</a>
+                </li>
+                <li>
+                    <a href="#">Restaurants</a>
+                </li>
+            </ul>
+            <div id="icons"></div>
         </nav>
     </header>
 
-    <div class="poele">
-        <input type="search">
-        <img src="/img/poele.png" alt="" srcset="">
+    <h2>Mangez bien et pas loin</h2>
 
-    </div>
-<section class="cards">
-    <div class="box1">
+    <form id="search-bar">
+        <input type="text" name="text" class="search" placeholder="Recherchez ici!">
+        <input type="submit" name="submit" class="submit" value=" ">
+    </form>
 
-    </div>
+    <section class="vedette"></section>
 
-    <div class="box2">
+    <section class="map"></section>
 
-    </div>
+    <section class="cards">
+        <div class="box1">
 
-    <div class="box3">
+        </div>
 
-    </div>
+        <div class="box2">
 
-    <div class="box4">
+        </div>
 
-    </div>
-       
+        <div class="box3">
+
+        </div>
+
+        <div class="box4">
+
+        </div>
+
     </section>
 
-
-
     <footer>
-
+        <nav class="botBar"></nav>
     </footer>
 
-
+    <script src="index.js"></script>
 </body>
+
 </html>
