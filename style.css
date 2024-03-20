@@ -217,7 +217,7 @@ main {
     justify-content: space-around;
     align-items: center;
 }
-}
+
 
 
 /**********************************/
@@ -457,3 +457,4 @@ footer {
         width: 90%;
         height: auto;
     }
+}
