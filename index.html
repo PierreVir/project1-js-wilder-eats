@@ -1,5 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Wilder-Eats || Manger Bien et pas loin</title>
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" alt="logo wilder eats" src="" />
+      <nav class="nav">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Map</li>
+          <li>Restaurants</li>
+          <li>Review</li>
+        </ul>
+      </nav>
+      <div class="poele">
+        <input type="search" />
+        <img src="/img/poele.png" alt="" srcset="" />
+      </div>
+    </header>
+    <main>
+      <section class="quote"></section>
+      <section class="featuredRestaurant"></section>
+      <section class="map"></section>
+      <section class="filterSlider"></section>
+
+      <section class="restaurantCards">
+        <div class="box1"></div>
+
+        <div class="box2"></div>
+=======
 
 <head>
     <meta charset="UTF-8">
@@ -71,12 +106,59 @@
         </section>
 
 
+        <div class="box3"></div>
+
+        <div class="box4"></div>
+      </section>
+      <section class="restaurantsReview"></section>
+      <section class="aboutUs"></section>
     </main>
-    <footer>
+    <div class="overlay"></div>
+    <div class="modal">
+      <div class="img-container-modal">
+        <img class="img-modal" src="img/img1.jpeg" alt="" />
+        <img class="heart-icon" src="img/heart.svg" alt="" />
+      </div>
+      <h3>Nom du restaurant</h3>
+      <div class="input-container">
+        <div class="firstInput-container">
+          <input
+            type="text"
+            placeholder="Votre pseudo"
+            class="firstInput"
+            name="name"
+            size="10"
+          />
+        </div>
+        <div class="secondInput-container">
+          <img
+            class="write-opinion-logo"
+            src="img/write-opinionLogo.svg"
+            alt=""
+          />
+          <textarea
+            class="secondInput"
+            type="text"
+            name="opinion"
+            size="10"
+            height="300px"
+          ></textarea>
+          <p class="placeholder-title">Laissez votre avis :</p>
+          <div class="write-opinion-note">
+            <img class="opinion-stars" src="img/starts.svg" alt="" />
+            <img class="opinion-stars" src="img/starts.svg" alt="" />
+            <img class="opinion-stars" src="img/starts.svg" alt="" />
+            <img class="opinion-stars" src="img/starts.svg" alt="" />
+            <img class="opinion-stars" src="img/starts.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="btn-right">
+        <button class="btn-opinion">Valider</button>
+      </div>
+    </div>
+    <footer></footer>
 
-    </footer>
-
-
-</body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>

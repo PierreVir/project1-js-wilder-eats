@@ -1,3 +1,5 @@
+function openModale() {}
+function closeModale() {}
 //moving img
 
 let imgPos = document.querySelector(".mapImage");
