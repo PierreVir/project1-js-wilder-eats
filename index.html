@@ -15,57 +15,33 @@
 
     <div class="poele">
         <input type="search">
-        <img src="/img/poele.png" alt="" srcset="">
-
-    </div>
-<section class="cards">
-    <div class="box1">
-
+        <img src="/img/poele.png" alt="poele avec oeuf" srcset="">
     </div>
 
-    <div class="box2">
-
+    <div id="buttons">
+        <button class="btn" onclick="filterRestaurant('all')">Tous</button>
+        <button class="btn" onclick="filterRestaurant('Burgers')">Burgers</button>
+        <button class="btn" onclick="filterRestaurant('Sushi')">Sushi</button>
+        <button class="btn" onclick="filterRestaurant('Asiatique')">Asiatique</button>
+        <button class="btn" onclick="filterRestaurant('indien')">Indien</button>
     </div>
 
-    <div class="box3">
-
+    <div class="restaurants">
+        <div class="restaurant Burgers">Burgers</div>
+        <div class="restaurant Sushi">Sushi</div>
+        <div class="restaurant chinois"></div>
+        <div class="restaurant Asiatique">Restaurant Asiatique</div>
+        <div class="restaurant Autres">Autres</div>
+        <div class="restaurant chinois">Restaurant Chinois 2</div>
+        <div class="restaurant indien">Restaurant Indien 1</div>
+        <div class="restaurant indien">Restaurant Indien 2</div>
     </div>
 
-    <div class="box4">
-
-    </div>
-       
-    </section>
-
-    <script>
-        // const fruits = ["🍏", "🍍", "🥝", "🥑", "🍒", "🍓"];
-
-
-        // const [pomme, ananas, kiwi, avocat, cerise] = fruits;
-        // console.log(pomme);
-        // console.log(ananas);
-
-        // const blogSpot = { title: "my Article,", categorie: "Programming"};
-        // const {title} = blogSpot;
-        // console.log(title);
-
-        // const blogPost = {title: "my article", category: "programming", rating: 4.6};
-
-        // const { category, ...otherProps } = blogPost;
-        // console.log(blogPost);
-
-        const myArray = [1, "js", true];
-
-        const [first, ...rest] = myArray;
-        console.log(myArray);
-
-    </script>
-
-
+    
     <footer>
 
     </footer>
 
-
+    <script src="filter.js"></script>
 </body>
 </html>

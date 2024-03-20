@@ -34,12 +34,14 @@ body {
 /* main - Card */
 
 
-.cards {
+/* .cards {
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;    
 }
+
+*/
 
 .box1, .box2, .box3, .box4 {
     height: 299px;
@@ -64,8 +66,45 @@ input{
 .img{
     width: 50px;
     height: 50px;
-    /*transform: rotate(-8deg);*/
 /* Inside auto layout */
+}
+
+#buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #E26D5C;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurant {
+    height: 299px;
+    width: 358px;
+    margin-bottom: 20px;
+    background-color:  #E26D5C;
+    border-radius: 20px;
+    box-shadow: 1px 3px 3px 1px black;
 }
 
 
