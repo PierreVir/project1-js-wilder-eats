@@ -1,90 +1,283 @@
-/* Code Couleurs de la Wilder-Eats Page 
-
-#F8DCA6 = jaune claire - Background du site
-#E26D5C = Orange foncé
-#8B7B5D = 
-
-// Cards colors
-#EEAC86 = Orange Clair
-ou 
-#A4716A = 
-
-// Barre de Nav Color
-
-#E26D5C = Orange 
-*/
-
-*{
-    margin: 0;
-    box-sizing: border-box;
+:root {
+  --main-color: #fbdfa8;
+  --secondary-color: #e26d5c;
+  --tertiary-color: #eeac86;
+  --text-color: #000000;
+  --internal-padding: 2rem;
+  --placeholder: #00000075;
 }
 
-
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
-    background-color: #F8DCA6;
+  background-color: #f8dca6;
 }
 
 .nav {
-    background-color: #E26D5C ;
+  background-color: #e26d5c;
+  height: 20vh;
+  width: 100vw;
+h2 {
+    color: var(--secondary-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.aboutUs h2 {
+    text-align: left;
+}
+
+.map h2 {
+    text-decoration: underline;
+}
+
+.nav img {
+    height: 64px
+}
+
+.featuredRestaurant h2,
+.map h2,
+.aboutUs h2 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.quote {
+    padding-block: 1rem;
+}
+
+.quote p {
+    text-align: center;
+    padding-block: 1rem;
+}
+
+
+main {
+    background-color: var(--main-color);
+    padding-inline: 1rem;
+}
+
+.nav {
+    background-color: var(--secondary-color);
     height: 20vh;
     width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.poele {
+    height: 32px;
+}
+
+.mapImage {
+    height: 16rem;
+    width: 100%;
+    background-image: url(img/city_map_by_torstan.jpg);
+    border-radius: 12px;
+    box-shadow: inset 0 4 4 0;
+}
+
 
 /* main - Card */
 
-
 .cards {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.box1, .box2, .box3, .box4 {
+.box1,
+.box2,
+.box3,
+.box4 {
+  height: 299px;
+  width: 358px;
+  margin-bottom: 20px;
+  background-color: #e26d5c;
+  border-radius: 20px;
+  box-shadow: 1px 3px 3px 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box1 {
     height: 299px;
     width: 358px;
     margin-bottom: 20px;
-    background-color:  #E26D5C;
+    background-color: var(--tertiary-color);
     border-radius: 20px;
     box-shadow: 1px 3px 3px 1px black;
 }
 
-
-.poele{
-    display: flex;
-    justify-content: flex-end;
+.poele {
+  display: flex;
+  justify-content: flex-end;
 }
 
-input{
-    border-radius: 5px;
-    width: 250px;
+.img {
+  width: 50px;
+  height: 50px;
 }
 
-.img{
-    width: 50px;
-    height: 50px;
-    /*transform: rotate(-8deg);*/
-/* Inside auto layout */
+/**********************************/
+/* Here start the modal's css */
+/**********************************/
+
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal {
+  border-radius: 2em;
+  padding: 1em;
+  margin: 20px;
+  background-color: var(--tertiary-color);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+.aboutUs {
+    padding-block: 1rem;
+}
+
+footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: var(--secondary-color);
 }
 
 
+.placeholder-title {
+  position: absolute;
+  top: 4%;
+  left: 13%;
+  color: var(--placeholder);
+  font-family: Arial;
+}
 
-@media screen and (max-width: 320px) { 
+.firstInput-container {
+  width: 100%;
+  & input {
+    padding-left: 1em;
+  }
+
+  & input::placeholder {
+    color: #00000075;
+  }
+}
+.secondInput-container {
+  position: relative;
+  width: 100%;
+  & input::placeholder {
+    position: absolute;
+    top: 4%;
+    left: 10%;
+  }
+}
+
+.write-opinion-note {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.write-opinion-logo {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 4%;
+  top: 5%;
+}
+
+.firstInput {
+  width: 40%;
+  border-radius: 8px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.secondInput {
+  height: 150px;
+  border-radius: 1em;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 100%;
+  padding-left: 1em;
+  padding-top: 2em;
+}
+
+.secondInput:active {
+  margin-bottom: 3em;
+}
+
+.btn-right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.btn-opinion {
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 1em;
+  border: none;
+  padding: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 35%;
+}
+
+.img-container-modal {
+  position: relative;
+}
+
+.img-modal {
+  height: 150px;
+  width: 100%;
+  border-radius: 1em;
+  object-fit: cover;
+/* @media screen and (max-width: 320px) {
     .card {
         width: 100%;
         height: auto;
     }
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) { 
-    .card {
-
-    }
+.heart-icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 5%;
+  right: 5%;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) { 
-    .card {   
-
-    }
-}
+/**********************************/
+/* Here end the modal's css */
+/**********************************/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .card {}
+} 

@@ -1,71 +1,166 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Wilder-Eats || Manger Bien et pas loin</title>
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" alt="logo wilder eats" src="" />
+      <nav class="nav">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Map</li>
+          <li>Restaurants</li>
+          <li>Review</li>
+        </ul>
+      </nav>
+      <div class="poele">
+        <input type="search" />
+        <img src="/img/poele.png" alt="" srcset="" />
+      </div>
+    </header>
+    <main>
+      <section class="quote"></section>
+      <section class="featuredRestaurant"></section>
+      <section class="map"></section>
+      <section class="filterSlider"></section>
+
+      <section class="restaurantCards">
+        <div class="box1"></div>
+
+        <div class="box2"></div>
+=======
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title> Wilder-Eats || Manger Bien et pas loin </title>
 </head>
+
 <body>
     <header>
         <nav class="nav">
+            <img class="logo" alt="logo wilder eats" src="img/Official_logo_soon.png">
+            <div class="poele">
+                <input type="search">
+                <img src="/img/poele.png" alt="" srcset="img/poele.png">
+            </div>
 
         </nav>
     </header>
+    <main>
+        <section class="quote">
+            <h2>Mangez bien et pas loin</h2>
+            <p>Par les wilders, pour les wilders</p>
+        </section>
+        <section class="featuredRestaurant">
+            <h2>En vedette</h2>
+            <div class="cardFeaturedRestaurant box1">
 
-    <div class="poele">
-        <input type="search">
-        <img src="/img/poele.png" alt="" srcset="">
+            </div>
+        </section>
+        <section class="map">
+            <h2>Autour de vous</h2>
+            <div class="mapImage">
 
+            </div>
+        </section>
+        <div class="filterSlider">
+            <button class="filterButton">Filter</button>
+
+
+
+        </div>
+
+        <div class="restaurantCards">
+            <div class="box1">
+
+            </div>
+        </div>
+        <div class="restaurantsReview">
+
+        </div>
+        <section class="aboutUs">
+            <h2>À propos</h2>
+            <p>Découvrez l'équipe savoureusement soudée derrière Wilder Eats : Romain "Le Goûteur Fou", Mansour "Le
+                Maestro des Menus", Erwan "L'Explorateur Épicurien", Pierre "Le Pilote des Papilles", et Gaël "Le
+                Gourmand Géolocalisateur". Nous sommes cinq compagnons de code avec une quête : guider les Wilders de la
+                Wild Code School vers les meilleures trouvailles culinaires alentour.
+                Wilder Eats, c'est notre réponse aux repas répétitifs et sans saveur. Notre application est une boussole
+                pour les papilles, pointant les étudiants affamés vers des expériences gastronomiques inédites, tout
+                près de leur lieu d'étude. Rejoignez l'aventure culinaire avec Wilder Eats et faites de chaque pause
+                déjeuner une découverte délicieuse.
+                Bon appétit, les Wilders ! À la table de l'aventure, il y a toujours une place pour plus de saveur.</p>
+
+        </section>
+
+
+        <div class="box3"></div>
+
+        <div class="box4"></div>
+      </section>
+      <section class="restaurantsReview"></section>
+      <section class="aboutUs"></section>
+    </main>
+    <div class="overlay"></div>
+    <div class="modal">
+      <div class="img-container-modal">
+        <img class="img-modal" src="img/img1.jpeg" alt="" />
+        <img class="heart-icon" src="img/heart.svg" alt="" />
+      </div>
+      <h3>Nom du restaurant</h3>
+      <div class="input-container">
+        <div class="firstInput-container">
+          <input
+            type="text"
+            placeholder="Votre pseudo"
+            class="firstInput"
+            name="name"
+            size="10"
+          />
+        </div>
+        <div class="secondInput-container">
+          <img
+            class="write-opinion-logo"
+            src="img/write-opinionLogo.svg"
+            alt=""
+          />
+          <textarea
+            class="secondInput"
+            type="text"
+            name="opinion"
+            size="10"
+            height="300px"
+          ></textarea>
+          <p class="placeholder-title">Laissez votre avis :</p>
+          <div class="write-opinion-note">
+            <img class="opinion-stars" src="img/starts.svg" alt="" />
+            <img class="opinion-stars" src="img/starts.svg" alt="" />
+            <img class="opinion-stars" src="img/starts.svg" alt="" />
+            <img class="opinion-stars" src="img/starts.svg" alt="" />
+            <img class="opinion-stars" src="img/starts.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="btn-right">
+        <button class="btn-opinion">Valider</button>
+      </div>
     </div>
-<section class="cards">
-    <div class="box1">
 
-    </div>
-
-    <div class="box2">
-
-    </div>
-
-    <div class="box3">
-
-    </div>
-
-    <div class="box4">
-
-    </div>
-       
-    </section>
-
-    <script>
-        // const fruits = ["🍏", "🍍", "🥝", "🥑", "🍒", "🍓"];
+    <footer></footer>
 
 
-        // const [pomme, ananas, kiwi, avocat, cerise] = fruits;
-        // console.log(pomme);
-        // console.log(ananas);
-
-        // const blogSpot = { title: "my Article,", categorie: "Programming"};
-        // const {title} = blogSpot;
-        // console.log(title);
-
-        // const blogPost = {title: "my article", category: "programming", rating: 4.6};
-
-        // const { category, ...otherProps } = blogPost;
-        // console.log(blogPost);
-
-        const myArray = [1, "js", true];
-
-        const [first, ...rest] = myArray;
-        console.log(myArray);
-
-    </script>
-
-
-    <footer>
-
-    </footer>
-
-
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
