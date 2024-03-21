@@ -140,9 +140,9 @@ li {
     list-style: none;
 }
 
-/* a {
+a {
     padding-inline: 5vw;
-} */
+}
 
 a,
 a:visited {
