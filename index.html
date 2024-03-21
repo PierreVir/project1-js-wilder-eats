@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-     <link rel="icon" type="image/vnd.icon" href="logo-copy.ico">
-    <title> Wilder-Eats || Manger Bien et pas loin </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/vnd.icon" href="logo-copy.ico">
+  <title> Wilder-Eats || Manger Bien et pas loin </title>
 </head>
 
-<body>
-    <header>
-   <nav id="nav">
+<body class="prevent-select">
+  <header>
+    <nav id="nav">
 
       <img src="logo.png" alt="logo" id="logo">
 
@@ -38,121 +39,164 @@
     </nav>
   </header>
 
-    <main>
-        <section class="quote">
-            <h2>Mangez bien et pas loin</h2>
-            <p>Par les wilders, pour les wilders</p>
-        </section>
-        <section class="featuredRestaurant">
-            <h2>En vedette</h2>
-            <div class="cardFeaturedRestaurant box1">
+  <main>
+    <section class="quote">
+      <h2>Mangez bien et pas loin</h2>
+      <p>Par les wilders, pour les wilders</p>
+    </section>
+    <section class="featuredRestaurant">
+      <h2>En vedette</h2>
+      <div class="cardFeaturedRestaurant box1">
 
-            </div>
-        </section>
-        <section class="map">
-            <h2>Autour de vous</h2>
-            <div class="mapImage">
-
-            </div>
-        </section>
-    <div id="buttons">
-        <button class="btn" onclick="filterRestaurant('all')">Tous</button>
-        <button class="btn" onclick="filterRestaurant('Burgers')">Burgers</button>
-        <button class="btn" onclick="filterRestaurant('Sushi')">Sushi</button>
-        <button class="btn" onclick="filterRestaurant('Asiatique')">Asiatique</button>
-        <button class="btn" onclick="filterRestaurant('indien')">Indien</button>
-    </div>
-
-        </div>
-
-    <div class="restaurants">
-        <div class="restaurant Burgers">Burgers</div>
-        <div class="restaurant Sushi">Sushi</div>
-        <div class="restaurant chinois"></div>
-        <div class="restaurant Asiatique">Restaurant Asiatique</div>
-        <div class="restaurant Autres">Autres</div>
-        <div class="restaurant chinois">Restaurant Chinois 2</div>
-        <div class="restaurant indien">Restaurant Indien 1</div>
-        <div class="restaurant indien">Restaurant Indien 2</div>
-    </div>
-
-
-        <div class="restaurantCards">
-            <div class="box1">
-
-            </div>
-        </div>
-        <div class="restaurantsReview">
-
-        </div>
-        <section class="aboutUs">
-            <h2>À propos</h2>
-            <p>Découvrez l'équipe savoureusement soudée derrière Wilder Eats : Romain "Le Goûteur Fou", Mansour "Le
-                Maestro des Menus", Erwan "L'Explorateur Épicurien", Pierre "Le Pilote des Papilles", et Gaël "Le
-                Gourmand Géolocalisateur". Nous sommes cinq compagnons de code avec une quête : guider les Wilders de la
-                Wild Code School vers les meilleures trouvailles culinaires alentour.
-                Wilder Eats, c'est notre réponse aux repas répétitifs et sans saveur. Notre application est une boussole
-                pour les papilles, pointant les étudiants affamés vers des expériences gastronomiques inédites, tout
-                près de leur lieu d'étude. Rejoignez l'aventure culinaire avec Wilder Eats et faites de chaque pause
-                déjeuner une découverte délicieuse.
-                Bon appétit, les Wilders ! À la table de l'aventure, il y a toujours une place pour plus de saveur.</p>
-
-        </section>
-      </section>
-      <section class="restaurantsReview"></section>
-      <section class="aboutUs"></section>
-    </main>
-    <div class="modal">
-      <div class="img-container-modal">
-        <img class="img-modal" src="img/img1.jpeg" alt="" />
-        <img class="heart-icon" src="img/heart.svg" alt="" />
       </div>
-      <h3>Nom du restaurant</h3>
-      <div class="input-container">
-        <div class="firstInput-container">
-          <input
-            type="text"
-            placeholder="Votre pseudo"
-            class="firstInput"
-            name="name"
-            size="10"
-          />
-        </div>
-        <div class="secondInput-container">
-          <img
-            class="write-opinion-logo"
-            src="img/write-opinionLogo.svg"
-            alt=""
-          />
-          <textarea
-            class="secondInput"
-            type="text"
-            name="opinion"
-            size="10"
-            height="300px"
-          ></textarea>
-          <p class="placeholder-title">Laissez votre avis :</p>
-          <div class="write-opinion-note">
-            <img class="opinion-stars" src="img/starts.svg" alt="" />
-            <img class="opinion-stars" src="img/starts.svg" alt="" />
-            <img class="opinion-stars" src="img/starts.svg" alt="" />
-            <img class="opinion-stars" src="img/starts.svg" alt="" />
-            <img class="opinion-stars" src="img/starts.svg" alt="" />
+    </section>
+    <section id="localisation">
+      <h2>Autour de vous</h2>
+      <div id="localisation-flex">
+        <div id="localisation-text"></div>
+        <div id="map-wrapper">
+          <div id="movable-map">
+
+            <div id="map">
+              <div id="logoWE-pin">
+                <a href="https://maps.app.goo.gl/v447pJXP7iZfCcbWA" target="_blank"><img id="logoWE-map-pin"
+                    src="img/logo.svg" alt="logo wilder eats" draggable="false">
+                </a>
+              </div>
+              <div id="malabar-pin">
+                <div id="malabarMapCard" class="inactive">
+                  <p>Le Malabar Burger</p>
+                </div>
+                <a href="https://maps.app.goo.gl/ewwCJQSohaMBWqDDA" target="_blank"><img id="malabar-map-pin"
+                    src="img\map-pin.svg" alt="pointeur géographique" draggable="false">
+                </a>
+              </div>
+              <div id="lesFiloches-pin">
+                <div id="lesFilochesMapCard" class="inactive">
+                  <p>Les Filoches</p>
+                </div>
+                <a href="https://maps.app.goo.gl/wkCu22UQLgLx2xrk7" target="_blank"><img id="filoches-map-pin"
+                    src="img\map-pin.svg" alt="pointeur géographique" draggable="false">
+                </a>
+              </div>
+              <div id="carrefourCity-pin">
+                <div id="carrefourCityMapCard" class="inactive">
+                  <p>Carrefour City</p>
+                </div>
+                <a href="https://maps.app.goo.gl/8B5reYqmk65e7kyX6" target="_blank">
+
+                  <img id="carrefourCity-map-pin" src="img\map-pin.svg" alt="pointeur géographique" draggable="false">
+                </a>
+              </div>
+              <div id="kiosque-pin">
+                <div id="kiosqueMapCard" class="inactive">
+                  <p>Le kiosque</p>
+                </div>
+                <a href="https://maps.app.goo.gl/6J9wfNz6vbwShFe28" target="_blank">
+
+                  <img id="kiosque-map-pin" src="img\map-pin.svg" alt="pointeur géographique" draggable="false">
+                </a>
+              </div>
+              <div id="rotisseur-pin">
+                <div id="rotisseurMapCard" class="inactive">
+                  <p>Le rotisseur</p>
+                </div>
+                <a href="https://maps.app.goo.gl/7arZHdq2yvDEY78f8" target="_blank">
+                  <img id="rotisseur-map-pin" src="img\map-pin.svg" alt="pointeur géographique" draggable="false">
+                </a>
+
+              </div>
+
+              <img id="mapImage" src="img/map.svg" draggable="false">
+            </div>
           </div>
         </div>
       </div>
-      <div class="btn-right">
-        <button class="btn-opinion">Valider</button>
-      </div>
+    </section>
+    <div id="buttons">
+      <button class="btn" onclick="filterRestaurant('all')">Tous</button>
+      <button class="btn" onclick="filterRestaurant('Burgers')">Burgers</button>
+      <button class="btn" onclick="filterRestaurant('Sushi')">Sushi</button>
+      <button class="btn" onclick="filterRestaurant('Asiatique')">Asiatique</button>
+      <button class="btn" onclick="filterRestaurant('indien')">Indien</button>
     </div>
 
-        <footer>
-          <nav class="botBar"></nav>
-        </footer>
+    </div>
+
+    <div class="restaurants">
+      <div class="restaurant Burgers">Burgers</div>
+      <div class="restaurant Sushi">Sushi</div>
+      <div class="restaurant chinois"></div>
+      <div class="restaurant Asiatique">Restaurant Asiatique</div>
+      <div class="restaurant Autres">Autres</div>
+      <div class="restaurant chinois">Restaurant Chinois 2</div>
+      <div class="restaurant indien">Restaurant Indien 1</div>
+      <div class="restaurant indien">Restaurant Indien 2</div>
+    </div>
+
+
+    <div class="restaurantCards">
+      <div class="box1">
+
+      </div>
+    </div>
+    <div class="restaurantsReview">
+
+    </div>
+    <section class="aboutUs">
+      <h2>À propos</h2>
+      <p>Découvrez l'équipe savoureusement soudée derrière Wilder Eats : Romain "Le Goûteur Fou", Mansour "Le
+        Maestro des Menus", Erwan "L'Explorateur Épicurien", Pierre "Le Pilote des Papilles", et Gaël "Le
+        Gourmand Géolocalisateur". Nous sommes cinq compagnons de code avec une quête : guider les Wilders de la
+        Wild Code School vers les meilleures trouvailles culinaires alentour.
+        Wilder Eats, c'est notre réponse aux repas répétitifs et sans saveur. Notre application est une boussole
+        pour les papilles, pointant les étudiants affamés vers des expériences gastronomiques inédites, tout
+        près de leur lieu d'étude. Rejoignez l'aventure culinaire avec Wilder Eats et faites de chaque pause
+        déjeuner une découverte délicieuse.
+        Bon appétit, les Wilders ! À la table de l'aventure, il y a toujours une place pour plus de saveur.</p>
+
+    </section>
+    </section>
+    <section class="restaurantsReview"></section>
+    <section class="aboutUs"></section>
+  </main>
+  <div class="modal">
+    <div class="img-container-modal">
+      <img class="img-modal" src="img/img1.jpeg" alt="" />
+      <img class="heart-icon" src="img/heart.svg" alt="" />
+    </div>
+    <h3>Nom du restaurant</h3>
+    <div class="input-container">
+      <div class="firstInput-container">
+        <input type="text" placeholder="Votre pseudo" class="firstInput" name="name" size="10" />
+      </div>
+      <div class="secondInput-container">
+        <img class="write-opinion-logo" src="img/write-opinionLogo.svg" alt="" />
+        <textarea class="secondInput" type="text" name="opinion" size="10" height="300px"></textarea>
+        <p class="placeholder-title">Laissez votre avis :</p>
+        <div class="write-opinion-note">
+          <img class="opinion-stars" src="img/starts.svg" alt="" />
+          <img class="opinion-stars" src="img/starts.svg" alt="" />
+          <img class="opinion-stars" src="img/starts.svg" alt="" />
+          <img class="opinion-stars" src="img/starts.svg" alt="" />
+          <img class="opinion-stars" src="img/starts.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="btn-right">
+      <button class="btn-opinion">Valider</button>
+    </div>
+  </div>
+
+  <footer>
+    <nav class="botBar"></nav>
+  </footer>
 
 
 
-    <script src="filter.js"></script>
-    <script src="./index.js"></script>
-  </body>
+  <script src="filter.js"></script>
+  <script src="./index.js"></script>
+  <script src="map.js"></script>
+</body>
+
 </html>

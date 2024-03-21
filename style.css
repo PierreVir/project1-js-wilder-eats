@@ -95,80 +95,80 @@ main {
   height: 299px;
   width: 358px;
   margin-bottom: 20px;
-  background-color:  #E26D5C;
+  background-color: #E26D5C;
   border-radius: 20px;
   box-shadow: 1px 3px 3px 1px black;
 }
 
 
 #logo {
-    width: 45px;
-    height: 45px;
-    margin-left: 1%;
+  width: 45px;
+  height: 45px;
+  margin-left: 1%;
 }
 
 #nav {
-    background-color: #E26D5C;
-    height: 8vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: calc(0.5rem + 1vw);
+  background-color: #E26D5C;
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: calc(0.5rem + 1vw);
 }
 
 #icons {
-    cursor: pointer;
-    color: #F8DCA6;
-    margin-bottom: 5px;
+  cursor: pointer;
+  color: #F8DCA6;
+  margin-bottom: 5px;
 }
 
 ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60%;
-    padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+  padding-left: 0;
 
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a,
 a:visited {
-    color: #F8DCA6;
-    text-decoration: none;
+  color: #F8DCA6;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #EEAC86;
+  color: #EEAC86;
 }
 
 h1 {
-    padding: auto;
-    color: #F8DCA6;
+  padding: auto;
+  color: #F8DCA6;
 }
 
 h2 {
-    color: #E26D5C;
-    padding: 16px;
-    text-align: center;
+  color: #E26D5C;
+  padding: 16px;
+  text-align: center;
 }
 
 form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input {
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 input {
-    contain: "\2622";
+  contain: "\2622";
 }
 
 
@@ -221,23 +221,24 @@ input {
 
 
 .img {
-    width: 50px;
-    height: 50px;
-    /*transform: rotate(-8deg);*/
-    /* Inside auto layout */
+  width: 50px;
+  height: 50px;
+  /*transform: rotate(-8deg);*/
+  /* Inside auto layout */
 }
+
 .aboutUs {
   padding-block: 1rem;
 }
 
 .botBar {
-    background-color: #E26D5C;
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+  background-color: #E26D5C;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 
 /**********************************/
@@ -286,6 +287,7 @@ input {
 
 .firstInput-container {
   width: 100%;
+
   & input {
     padding-left: 1em;
   }
@@ -294,9 +296,11 @@ input {
     color: #00000075;
   }
 }
+
 .secondInput-container {
   position: relative;
   width: 100%;
+
   & input::placeholder {
     position: absolute;
     top: 4%;
@@ -378,93 +382,351 @@ input {
 /**********************************/
 /* Here end the modal's css */
 /**********************************/
+
+/* 
+Here start the map's css
+ */
+
+#localisation {
+  display: flex;
+  flex-direction: column;
+}
+
+#localisation-flex {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10%;
+  gap: 20px;
+}
+
+
+#map-wrapper {
+
+  overflow: hidden;
+  width: 90vw;
+  max-width: max-content;
+  aspect-ratio: 16/9;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px 5px;
+  scroll-behavior: initial;
+}
+
+#movable-map {
+  max-width: max-content;
+}
+
+#map {
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+
+#mapImage {
+  width: 819px;
+}
+
+#malabar-pin {
+  position: absolute;
+  top: 80%;
+  left: 5.8%;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.15rem)
+}
+
+#malabarMapCard {
+  display: none;
+  width: max-content;
+  background-color: rgb(255, 181, 154);
+  position: absolute;
+  top: -95%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 5px;
+
+}
+
+#malabarMapCard.active {
+  display: block;
+}
+
+#malabarMapCard.inactive {
+  display: none;
+}
+
+#lesFiloches-pin {
+  position: absolute;
+  width: 10%;
+  top: 82%;
+  left: 25.5%;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.15rem)
+}
+
+#lesFilochesMapCard {
+  display: none;
+  width: max-content;
+  background-color: rgb(255, 181, 154);
+  position: absolute;
+  top: 100%;
+  left: -45%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 5px;
+
+}
+
+#lesFilochesMapCard.active {
+  display: block;
+}
+
+#lesFilochesMapCard.inactive {
+  display: none;
+}
+
+#kiosque-pin {
+  position: absolute;
+  width: 10%;
+  top: 27%;
+  left: 42.5%;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.15rem)
+}
+
+#kiosqueMapCard {
+  display: none;
+  width: max-content;
+  background-color: rgb(255, 181, 154);
+  position: absolute;
+  top: -95%;
+  left: -37%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 5px;
+
+}
+
+#kiosqueMapCard.active {
+  display: block;
+}
+
+#kiosqueMapCard.inactive {
+  display: none;
+}
+
+
+#carrefourCity-pin {
+  position: absolute;
+  width: 10%;
+  top: 30.5%;
+  left: 58.9%;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.15rem)
+}
+
+#carrefourCityMapCard {
+  display: none;
+  width: max-content;
+  background-color: rgb(255, 181, 154);
+  position: absolute;
+  top: -95%;
+  left: -50%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 5px;
+
+}
+
+#carrefourCityMapCard.active {
+  display: block;
+}
+
+#carrefourCityMapCard.inactive {
+  display: none;
+}
+
+#rotisseur-pin {
+  position: absolute;
+  width: 10%;
+  top: 13%;
+  left: 58.9%;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.15rem)
+}
+
+#rotisseurMapCard {
+  display: none;
+  width: max-content;
+  background-color: rgb(255, 181, 154);
+  position: absolute;
+  top: -95%;
+  left: -40%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 5px;
+
+}
+
+#rotisseurMapCard.active {
+  display: block;
+}
+
+#rotisseurMapCard.inactive {
+  display: none;
+}
+
+#logoWE-pin {
+  position: absolute;
+  width: 10%;
+  top: 36.5%;
+  left: 57.9%;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.15rem)
+}
+
+#map-pin {
+  width: 1.5rem;
+}
+
+#malabar-map-pin {
+  width: 1.5rem
+}
+
+#filoches-map-pin {
+  width: 1.5rem
+}
+
+#kiosque-map-pin {
+  width: 1.5rem
+}
+
+#carrefourCity-map-pin {
+  width: 1.5rem
+}
+
+#logoWE-map-pin {
+  width: 1rem
+}
+
+#rotisseur-map-pin {
+  width: 1.5rem
+}
+
+
+
+
+#localisation {
+  display: flex;
+  flex-direction: column;
+}
+
+#localisation-flex {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10%;
+  gap: 20px;
+}
+
+.prevent-select {
+  user-select: none;
+}
+
+/* 
+Here end the map's css
+ */
+
+
 @media screen and (max-width: 320px) {
 
-    #nav {
-        justify-content: space-around;
-    }
+  #nav {
+    justify-content: space-around;
+  }
 
-    nav ul {
-        position: fixed;
-        left: -100%;
-        top: 2vh;
-        transition: 0.25s;
-    }
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 2vh;
+    transition: 0.25s;
+  }
 
-    #logo {
-        margin: 0;
-    }
+  #logo {
+    margin: 0;
+  }
 
-    #icons {
-        display: block;
+  #icons {
+    display: block;
 
-    }
+  }
 
-    #icons::before {
-        content: "\2630";
-        font-size: 2rem;
-    }
+  #icons::before {
+    content: "\2630";
+    font-size: 2rem;
+  }
 
-    .active #icons::before {
-        left: 0;
-        content: "\2715";
-    }
+  .active #icons::before {
+    left: 0;
+    content: "\2715";
+  }
 
-    .card {
-        width: 90%;
-        height: auto;
-    }
+  .card {
+    width: 90%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 768px) {
 
 
-    #nav {
-        justify-content: space-around;
-    }
-
-    nav ul {
-        position: fixed;
-        left: -100%;
-        top: 7.9vh;
-        transition: 0.25s;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: #E26D5C;
-        width: 100%;
-        text-align: center;
-        font-size: 1.5rem;
-        height: 40%;
-
-    }
-
-    #logo {
-        margin: 0;
-    }
-
-    #icons {
-        display: block;
-        padding-top: 0;
-
-    }
-
-    #icons:before {
-        content: "\2630";
-        font-size: 2.2rem;
-
-    }
-
-    .active #icons:before {
-        left: 0;
-        content: "\2715";
-    }
-
-    .active ul {
-        left: 0;
-    }
-
-    .card {
-        width: 90%;
-        height: auto;
-    }
+  #nav {
+    justify-content: space-around;
   }
+
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 7.9vh;
+    transition: 0.25s;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #E26D5C;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 40%;
+
+  }
+
+  #logo {
+    margin: 0;
+  }
+
+  #icons {
+    display: block;
+    padding-top: 0;
+
+  }
+
+  #icons:before {
+    content: "\2630";
+    font-size: 2.2rem;
+
+  }
+
+  .active #icons:before {
+    left: 0;
+    content: "\2715";
+  }
+
+  .active ul {
+    left: 0;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+}
