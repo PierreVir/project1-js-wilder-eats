@@ -100,6 +100,7 @@ main {
     box-shadow: 1px 3px 3px 1px black;
 }
 
+/* navbar */
 
 #logo {
     width: 50px;
@@ -126,6 +127,7 @@ main {
 }
 
 ul {
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -138,9 +140,9 @@ li {
     list-style: none;
 }
 
-a {
+/* a {
     padding-inline: 5vw;
-}
+} */
 
 a,
 a:visited {
@@ -175,6 +177,27 @@ main {
 }
 
 /* navbar end */
+
+
+/* searchbar */
+.search input[type=text] {
+    width: 200px;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+}
+
+.search button {
+    background-color: #fbdfa8;
+    color: #E26D5C;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+
+}
+
+/* searchbar end */
+
 
 /* main - Card */
 .mapImage {
@@ -370,6 +393,11 @@ footer {
     right: 5%;
 }
 
+/* footer */
+.footButtons {
+    height: 1.5rem;
+}
+
 /**********************************/
 /* Here end the modal's css */
 /**********************************/
@@ -384,6 +412,7 @@ footer {
         left: -100%;
         top: 2vh;
         transition: 0.25s;
+
     }
 
 
@@ -457,4 +486,16 @@ footer {
         width: 90%;
         height: auto;
     }
+}
+
+/* footer */
+.footButtons {
+    height: 1.5rem;
+}
+
+footer p {
+    text-align: center;
+    color: #F8DCA6;
+    font-size: small;
+    padding: 2px;
 }

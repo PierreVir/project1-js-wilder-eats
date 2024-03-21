@@ -20,3 +20,5 @@ main.addEventListener('click', () => {
 
 function openModale() { }
 function closeModale() { }
+
+// logo click 
