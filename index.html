@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html id="accueil" lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -18,7 +18,7 @@
   <header>
     <nav id="nav">
 
-      <img src="logo.png" alt="logo" id="logo">
+      <a href="#accueil"><img src="logo.png" alt="logo" id="logo"></a>
 
       <h1>Wilder Eats</h1>
       <ul>
@@ -42,7 +42,17 @@
   <main>
     <section class="quote">
       <h2>Mangez bien et pas loin</h2>
-      <p>Par les wilders, pour les wilders</p>
+      <!-- searchbar -->
+      <div class="search">
+        <form action="#">
+          <input type="text" placeholder=" Rechercher..." name="search">
+          <button id="searchButton">
+            <span>&#x1F50D;</span>
+          </button>
+        </form>
+      </div>
+      </div>
+      <!-- searchbar end -->
     </section>
     <section class="featuredRestaurant">
       <h2>En vedette</h2>
@@ -156,6 +166,11 @@
         Bon appétit, les Wilders ! À la table de l'aventure, il y a toujours une place pour plus de saveur.</p>
 
     </section>
+
+
+    <div class="box3"></div>
+
+    <div class="box4"></div>
     </section>
     <section class="restaurantsReview"></section>
     <section class="aboutUs"></section>
@@ -189,7 +204,22 @@
   </div>
 
   <footer>
-    <nav class="botBar"></nav>
+    <ul class="footButtons">
+      <li>
+        <a href="#">Accueil</a>
+      </li>
+      <li>
+        <a href="#">A propos</a>
+      </li>
+      <li>
+        <a href="#">Map</a>
+      </li>
+      <li>
+        <a href="#">Restaurants</a>
+      </li>
+    </ul>
+    <p class="slogan">Créé par les Wilders pour les Wilders</p>
+    <p class="copyright">&copy; 2024 Wilders Technologies Inc.</p>
   </footer>
 
 
