@@ -1,460 +1,285 @@
 :root {
-    --main-color: #fbdfa8;
-    --secondary-color: #e26d5c;
-    --tertiary-color: #eeac86;
-    --text-color: #000000;
-    --internal-padding: 2rem;
-    --placeholder: #00000075;
+  --main-color: #fbdfa8;
+  --secondary-color: #e26d5c;
+  --tertiary-color: #eeac86;
+  --text-color: #000000;
+  --internal-padding: 2rem;
+  --placeholder: #00000075;
 }
 
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 body {
-    background-color: #f8dca6;
+  background-color: #f8dca6;
 }
 
 h2 {
-    color: var(--secondary-color);
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
+  color: var(--secondary-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
 }
 
 .aboutUs h2 {
-    text-align: left;
+  text-align: left;
 }
 
 .map h2 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .nav img {
-    height: 64px;
+  height: 64px;
 }
 
 .featuredRestaurant h2,
 .map h2,
 .aboutUs h2 {
-    font-size: 3rem;
-    font-weight: 300;
+  font-size: 3rem;
+  font-weight: 300;
 }
 
 .quote {
-    padding-block: 1rem;
+  padding-block: 1rem;
 }
 
 .quote p {
-    text-align: center;
-    padding-block: 1rem;
+  text-align: center;
+  padding-block: 1rem;
 }
 
 main {
-    background-color: var(--main-color);
-    padding-inline: 1rem;
+  background-color: var(--main-color);
+  padding-inline: 1rem;
 }
 
-
 #buttons {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .btn {
-    background-color: #E26D5C;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
+  background-color: #e26d5c;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 .restaurants {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .restaurant {
-    height: 299px;
-    width: 100%;
-    margin-bottom: 20px;
-    background-color: #E26D5C;
-    border-radius: 20px;
-    box-shadow: 1px 3px 3px 1px black;
+  height: 299px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #e26d5c;
+  border-radius: 20px;
+  box-shadow: 1px 3px 3px 1px black;
 }
 
-
 #logo {
-    width: 50px;
-    height: 50px;
-    margin-left: 1vw;
+  width: 50px;
+  height: 50px;
+  margin-left: 1vw;
 }
 
 #nav {
-    position: fixed;
-    background-color: #E26D5C;
-    height: 8vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: calc(0.5rem + 1vw);
-    padding-right: 2rem;
+  position: fixed;
+  background-color: #e26d5c;
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: calc(0.5rem + 1vw);
+  padding-right: 2rem;
 }
 
 #icons {
-    cursor: pointer;
-    color: #F8DCA6;
-    margin-bottom: 5px;
+  cursor: pointer;
+  color: #f8dca6;
+  margin-bottom: 5px;
 }
 
 ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60%;
-    padding-left: 0;
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+  padding-left: 0;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    padding-inline: 5vw;
+  padding-inline: 5vw;
 }
 
 a,
 a:visited {
-    color: #F8DCA6;
-    text-decoration: none;
+  color: #f8dca6;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #EEAC86;
+  color: #eeac86;
 }
 
 h1 {
-    padding: auto;
-    color: #F8DCA6;
+  padding: auto;
+  color: #f8dca6;
 }
 
 h2 {
-    color: #E26D5C;
-    padding: 16px;
-    text-align: center;
+  color: #e26d5c;
+  padding: 16px;
+  text-align: center;
 }
 
 form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 main {
-    padding-top: 8vh;
+  padding-top: 8vh;
 }
 
 /* navbar end */
 
 /* main - Card */
 .mapImage {
-    height: 16rem;
-    width: 100%;
-    background-image: url(img/city_map_by_torstan.jpg);
-    border-radius: 12px;
-    box-shadow: inset 0 4 4 0;
+  height: 16rem;
+  width: 100%;
+  background-image: url(img/city_map_by_torstan.jpg);
+  border-radius: 12px;
+  box-shadow: inset 0 4 4 0;
 }
-
 
 .cards {
-
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-
-
 .img {
-    width: 50px;
-    height: 50px;
-    /*transform: rotate(-8deg);*/
-    /* Inside auto layout */
+  width: 50px;
+  height: 50px;
+  /*transform: rotate(-8deg);*/
+  /* Inside auto layout */
 }
 
 .aboutUs {
-    padding-block: 1rem;
+  padding-block: 1rem;
 }
 
 .botBar {
-    background-color: #E26D5C;
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  background-color: #e26d5c;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-
-
-/**********************************/
-/* Here start the modal's css */
-/**********************************/
-
-.overlay {
-    position: fixed;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-
-}
-
-.modal {
-    border-radius: 2em;
-    padding: 1em;
-    margin: 20px;
-    background-color: var(--tertiary-color);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.input-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5em;
-}
-
-.aboutUs {
-    padding-block: 1rem;
-}
-
-footer {
-    height: 10vh;
-    width: 100vw;
-    background-color: var(--secondary-color);
-}
-
-.placeholder-title {
-    position: absolute;
-    top: 4%;
-    left: 13%;
-    color: var(--placeholder);
-    font-family: Arial;
-}
-
-.firstInput-container {
-    width: 100%;
-
-    & input {
-        padding-left: 1em;
-    }
-
-
-}
-
-& input::placeholder {
-    color: #00000075;
-}
-
-
-.secondInput-container {
-    position: relative;
-    width: 100%;
-
-    & input::placeholder {
-        position: absolute;
-        top: 4%;
-        left: 10%;
-    }
-}
-
-.write-opinion-note {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-}
-
-.write-opinion-logo {
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    left: 4%;
-    top: 5%;
-}
-
-.firstInput {
-    width: 40%;
-    border-radius: 8px;
-    border: none;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.secondInput {
-    height: 150px;
-    border-radius: 1em;
-    border: none;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    width: 100%;
-    padding-left: 1em;
-    padding-top: 2em;
-}
-
-.secondInput:active {
-    margin-bottom: 3em;
-}
-
-.btn-right {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-}
-
-.btn-opinion {
-    background-color: var(--secondary-color);
-    color: white;
-    border-radius: 1em;
-    border: none;
-    padding: 1em;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    width: 35%;
-}
-
-.img-container-modal {
-    position: relative;
-}
-
-.img-modal {
-    height: 150px;
-    width: 100%;
-    border-radius: 1em;
-    object-fit: cover;
-}
-
-.heart-icon {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 5%;
-    right: 5%;
-}
-
-/**********************************/
-/* Here end the modal's css */
-/**********************************/
 @media screen and (max-width: 320px) {
+  #nav {
+    justify-content: space-around;
+  }
 
-    #nav {
-        justify-content: space-around;
-    }
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 2vh;
+    transition: 0.25s;
+  }
 
-    nav ul {
-        position: fixed;
-        left: -100%;
-        top: 2vh;
-        transition: 0.25s;
-    }
+  #icons {
+    display: block;
+  }
 
+  #icons::before {
+    content: "\2630";
+    font-size: 2rem;
+  }
 
-    #icons {
-        display: block;
+  .active #icons::before {
+    left: 0;
+    content: "\2715";
+  }
 
-    }
-
-    #icons::before {
-        content: "\2630";
-        font-size: 2rem;
-    }
-
-    .active #icons::before {
-        left: 0;
-        content: "\2715";
-    }
-
-    .card {
-        width: 90%;
-        height: auto;
-    }
+  .card {
+    width: 90%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 768px) {
+  #nav {
+    justify-content: space-around;
+  }
 
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 7.9vh;
+    transition: 0.25s;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #e26d5c;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 40%;
+  }
 
-    #nav {
-        justify-content: space-around;
-    }
+  #icons {
+    display: block;
+    padding-top: 0;
+  }
 
-    nav ul {
-        position: fixed;
-        left: -100%;
-        top: 7.9vh;
-        transition: 0.25s;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: #E26D5C;
-        width: 100%;
-        text-align: center;
-        font-size: 1.5rem;
-        height: 40%;
+  #icons:before {
+    content: "\2630";
+    font-size: 2.2rem;
+  }
 
-    }
+  .active #icons:before {
+    left: 0;
+    content: "\2715";
+  }
 
+  .active ul {
+    left: 0;
+  }
 
-
-    #icons {
-        display: block;
-        padding-top: 0;
-
-    }
-
-    #icons:before {
-        content: "\2630";
-        font-size: 2.2rem;
-
-    }
-
-    .active #icons:before {
-        left: 0;
-        content: "\2715";
-    }
-
-    .active ul {
-        left: 0;
-    }
-
-    .card {
-        width: 90%;
-        height: auto;
-    }
+  .card {
+    width: 90%;
+    height: auto;
+  }
 }
