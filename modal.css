@@ -188,12 +188,17 @@ footer {
 
 .heart-icon {
   position: absolute;
+  cursor: pointer;
   width: 16px;
   height: 16px;
   top: 5%;
   right: 5%;
 }
 
+.opinion-stars {
+  width: 16px;
+  cursor: pointer;
+}
 /**********************************/
 /* Here end the modal's css */
 /**********************************/
