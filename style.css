@@ -118,6 +118,7 @@ main {
   align-items: center;
   font-size: calc(0.5rem + 1vw);
   padding-right: 2rem;
+  z-index: 3;
 }
 
 #icons {
@@ -697,6 +698,9 @@ Here end the map's css
 
 @media screen and (min-width: 321px) and (max-width: 768px) {
 
+  main {
+    padding-inline: 3rem;
+  }
 
   #nav {
     justify-content: space-around;
@@ -714,7 +718,6 @@ Here end the map's css
     text-align: center;
     font-size: 1.5rem;
     height: 40%;
-
   }
 
 
@@ -756,4 +759,25 @@ footer p {
   color: #F8DCA6;
   font-size: small;
   padding: 2px;
+}
+
+@media screen and (min-width: 769px) {
+  main {
+    padding-inline: 6rem;
+  }
+
+
+
+  .aboutUs {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 0;
+    width: 65ch;
+    flex-wrap: wrap;
+
+
+  }
 }
