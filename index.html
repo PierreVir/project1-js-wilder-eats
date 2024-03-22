@@ -45,9 +45,6 @@
         </section>
         <section class="featuredRestaurant">
             <h2>En vedette</h2>
-            <div class="cardFeaturedRestaurant box1">
-
-            </div>
         </section>
         <section class="map">
             <h2>Autour de vous</h2>
@@ -58,27 +55,30 @@
     <div id="buttons">
         <button class="btn" onclick="filterRestaurant('all')">Tous</button>
         <button class="btn" onclick="filterRestaurant('Burgers')">Burgers</button>
-        <button class="btn" onclick="filterRestaurant('Sushi')">Sushi</button>
-        <button class="btn" onclick="filterRestaurant('Asiatique')">Asiatique</button>
-        <button class="btn" onclick="filterRestaurant('indien')">Indien</button>
+        <button class="btn" onclick="filterRestaurant('asiatique')">Asiatique</button>
+        <button class="btn" onclick="filterRestaurant('Rotisserie')">Rotisserie</button>
+        <button class="btn" onclick="filterRestaurant('Superette')">Superette</button>
     </div>
 
         </div>
 
     <div class="restaurants">
-        <div class="restaurant Burgers">Burgers</div>
-        <div class="restaurant Sushi">Sushi</div>
+      <div class="restaurant-card">
+          <div class="restaurant-img"></div>
+          <h2 class="restaurant-title">Burgers</h2>
+          <button class="restaurant-button">Voir le restautant</button>
+      </div>
+
+
+
+        <!-- <div class="restaurant Sushi">Sushi</div>
         <div class="restaurant chinois"></div>
         <div class="restaurant Asiatique">Restaurant Asiatique</div>
         <div class="restaurant Autres">Autres</div>
         <div class="restaurant chinois">Restaurant Chinois 2</div>
         <div class="restaurant indien">Restaurant Indien 1</div>
-        <div class="restaurant indien">Restaurant Indien 2</div>
+        <div class="restaurant indien">Restaurant Indien 2</div> -->
     </div>
-
-
-        <div class="restaurantCards">
-            <div class="box1">
 
             </div>
         </div>
@@ -101,7 +101,7 @@
       </section>
       <section class="restaurantsReview"></section>
       <section class="aboutUs"></section>
-    </main>
+    
     <div class="modal">
       <div class="img-container-modal">
         <img class="img-modal" src="img/img1.jpeg" alt="" />
@@ -145,7 +145,7 @@
         <button class="btn-opinion">Valider</button>
       </div>
     </div>
-
+  </main>
         <footer>
           <nav class="botBar"></nav>
         </footer>
@@ -154,5 +154,6 @@
 
     <script src="filter.js"></script>
     <script src="./index.js"></script>
+    <script src="restaurants.js"></script>
   </body>
 </html>
