@@ -1,0 +1,214 @@
+/**********************************/
+/* Here start the modal's css */
+/**********************************/
+
+.modal-container {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: visibility 0.4s;
+}
+
+.modal-container.active {
+  /* display: block; */
+  visibility: visible;
+  transition: visibility 0s;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+
+.modal-container.active .overlay {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal {
+  opacity: 0;
+  position: absolute;
+  width: 75vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, calc(-50% - 50px));
+  border-radius: 2em;
+  padding: 1em;
+  margin: 20px;
+  background-color: var(--tertiary-color);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.modal-container.active .modal {
+  opacity: 1;
+  transform: translate(-55%, -50%);
+  transition: opacity 0.4s 0.2s ease-out, transform 0.4s 0.2s ease-out;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.aboutUs {
+  padding-block: 1rem;
+}
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: var(--secondary-color);
+}
+
+.placeholder-title {
+  position: absolute;
+  top: 4%;
+  left: 13%;
+  color: var(--placeholder);
+  font-family: Arial;
+}
+
+.firstInput-container {
+  width: 100%;
+
+  & input {
+    padding-left: 1em;
+  }
+}
+
+& input::placeholder {
+  color: #00000075;
+}
+
+.secondInput-container {
+  position: relative;
+  width: 100%;
+
+  & input::placeholder {
+    position: absolute;
+    top: 4%;
+    left: 10%;
+  }
+}
+
+.write-opinion-note {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.write-opinion-logo {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 4%;
+  top: 5%;
+}
+
+.firstInput {
+  width: 40%;
+  border-radius: 8px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.secondInput {
+  height: 150px;
+  border-radius: 1em;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 100%;
+  padding-left: 1em;
+  padding-top: 2em;
+}
+
+.secondInput:active {
+  margin-bottom: 3em;
+}
+
+.btn-right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.btn-validate-opinion {
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 1em;
+  border: none;
+  padding: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 35%;
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+
+.btn-validate-opinion:hover {
+  transform: scale(1.05);
+}
+
+.btn-opinion {
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 1em;
+  border: none;
+  padding: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 35%;
+}
+
+.img-container-modal {
+  position: relative;
+}
+
+.img-modal {
+  height: 150px;
+  width: 100%;
+  border-radius: 1em;
+  object-fit: cover;
+}
+
+.heart-icon {
+  position: absolute;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  top: 5%;
+  right: 5%;
+}
+
+.opinion-stars {
+  width: 16px;
+  cursor: pointer;
+}
+/**********************************/
+/* Here end the modal's css */
+/**********************************/
+
+@media screen and (min-width: 767px) {
+  .modal {
+    width: 35%;
+  }
+
+  .placeholder-title {
+    left: 9%;
+  }
+}
