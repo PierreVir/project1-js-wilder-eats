@@ -82,22 +82,49 @@ main {
 }
 
 .restaurants {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.restaurant {
-    height: 299px;
-    width: 100%;
-    margin-bottom: 20px;
-    background-color: #E26D5C;
-    border-radius: 20px;
-    box-shadow: 1px 3px 3px 1px black;
+.restaurant-card {
+  height: 299px;
+  width: 100%;
+  max-width: 350px;
+  background-color:  #E26D5C;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  padding-bottom: 1rem;
+  gap: 1rem;
+  border-radius: 20px;
+  box-shadow: 1px 3px 3px 1px black;
+  margin: 10px;
+}
+
+
+.restaurant-img{
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/burger\ \ Tests.jpg");
+  height: 240px;
+  width: 100%;
+}
+
+.restaurant-title{
+  color: black;
+  padding: 0;
+}
+
+.restaurant-button{
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  background-color: lightblue;
+  width: calc(100% - 2rem);
 }
 
 /* navbar */
@@ -485,7 +512,6 @@ footer {
     .card {
         width: 90%;
         height: auto;
-    }
 }
 
 /* footer */
@@ -498,4 +524,4 @@ footer p {
     color: #F8DCA6;
     font-size: small;
     padding: 2px;
-}
+}}
