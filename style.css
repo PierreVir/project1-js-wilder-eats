@@ -61,13 +61,14 @@ main {
   padding-inline: 1rem;
 }
 
+
 #buttons {
   text-align: center;
   margin: 20px 0;
 }
 
 .btn {
-  background-color: #e26d5c;
+  background-color: #E26D5C;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -91,7 +92,7 @@ main {
   height: 299px;
   width: 100%;
   max-width: 350px;
-  background-color: #e26d5c;
+  background-color: #E26D5C;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -103,6 +104,7 @@ main {
   box-shadow: 1px 3px 3px 1px black;
   margin: 10px;
 }
+
 
 .restaurant-img {
   background-size: cover;
@@ -126,6 +128,7 @@ main {
 }
 
 /* navbar */
+
 #logo {
   width: 50px;
   height: 50px;
@@ -134,7 +137,7 @@ main {
 
 #nav {
   position: fixed;
-  background-color: #e26d5c;
+  background-color: #E26D5C;
   height: 8vh;
   width: 100vw;
   display: flex;
@@ -147,43 +150,45 @@ main {
 
 #icons {
   cursor: pointer;
-  color: #f8dca6;
+  color: #F8DCA6;
   margin-bottom: 5px;
 }
 
 ul {
+
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 60%;
   padding-left: 0;
+
 }
 
 li {
   list-style: none;
 }
 
-a {
-  padding-inline: 5vw;
-}
+/* a {
+    padding-inline: 5vw;
+} */
 
 a,
 a:visited {
-  color: #f8dca6;
+  color: #F8DCA6;
   text-decoration: none;
 }
 
 a:hover {
-  color: #eeac86;
+  color: #EEAC86;
 }
 
 h1 {
   padding: auto;
-  color: #f8dca6;
+  color: #F8DCA6;
 }
 
 h2 {
-  color: #e26d5c;
+  color: #E26D5C;
   padding: 16px;
   text-align: center;
 }
@@ -194,14 +199,16 @@ form {
   align-items: center;
 }
 
+
 main {
   padding-top: 8vh;
 }
 
 /* navbar end */
 
+
 /* searchbar */
-.search input[type="text"] {
+.search input[type=text] {
   width: 200px;
   height: 25px;
   border-radius: 25px;
@@ -210,13 +217,15 @@ main {
 
 .search button {
   background-color: #fbdfa8;
-  color: #e26d5c;
+  color: #E26D5C;
   border: none;
   cursor: pointer;
   font-size: large;
+
 }
 
 /* searchbar end */
+
 
 /* main - Card */
 .mapImage {
@@ -227,12 +236,18 @@ main {
   box-shadow: inset 0 4 4 0;
 }
 
+
 .cards {
+
   margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
+
+
+
 
 .img {
   width: 50px;
@@ -246,13 +261,174 @@ main {
 }
 
 .botBar {
-  background-color: #e26d5c;
+  background-color: #E26D5C;
   height: 10vh;
   width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
+
+
+/**********************************/
+/* Here start the modal's css */
+/**********************************/
+
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+
+}
+
+.modal {
+  border-radius: 2em;
+  padding: 1em;
+  margin: 20px;
+  background-color: var(--tertiary-color);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.aboutUs {
+  padding-block: 1rem;
+}
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: var(--secondary-color);
+}
+
+.placeholder-title {
+  position: absolute;
+  top: 4%;
+  left: 13%;
+  color: var(--placeholder);
+  font-family: Arial;
+}
+
+.firstInput-container {
+  width: 100%;
+
+  & input {
+    padding-left: 1em;
+  }
+
+
+}
+
+& input::placeholder {
+  color: #00000075;
+}
+
+
+.secondInput-container {
+  position: relative;
+  width: 100%;
+
+  & input::placeholder {
+    position: absolute;
+    top: 4%;
+    left: 10%;
+  }
+}
+
+.write-opinion-note {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.write-opinion-logo {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 4%;
+  top: 5%;
+}
+
+.firstInput {
+  width: 40%;
+  border-radius: 8px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.secondInput {
+  height: 150px;
+  border-radius: 1em;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 100%;
+  padding-left: 1em;
+  padding-top: 2em;
+}
+
+.secondInput:active {
+  margin-bottom: 3em;
+}
+
+.btn-right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.btn-opinion {
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 1em;
+  border: none;
+  padding: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 35%;
+}
+
+.img-container-modal {
+  position: relative;
+}
+
+.img-modal {
+  height: 150px;
+  width: 100%;
+  border-radius: 1em;
+  object-fit: cover;
+}
+
+.heart-icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 5%;
+  right: 5%;
+}
+
+/* footer */
+.footButtons {
+  height: 1.5rem;
+}
+
+/**********************************/
+/* Here end the modal's css */
+/**********************************/
 
 /* 
 Here start the map's css
@@ -272,7 +448,9 @@ Here start the map's css
   gap: 20px;
 }
 
+
 #map-wrapper {
+
   overflow: hidden;
   width: 90vw;
   max-width: max-content;
@@ -302,7 +480,7 @@ Here start the map's css
   top: 80%;
   left: 5.8%;
   z-index: 2;
-  filter: drop-shadow(0 0 0.15rem);
+  filter: drop-shadow(0 0 0.15rem)
 }
 
 #malabarMapCard {
@@ -314,6 +492,7 @@ Here start the map's css
   padding-block: 0.5rem;
   padding-inline: 0.5rem;
   border-radius: 5px;
+
 }
 
 #malabarMapCard.active {
@@ -330,7 +509,7 @@ Here start the map's css
   top: 82%;
   left: 25.5%;
   z-index: 2;
-  filter: drop-shadow(0 0 0.15rem);
+  filter: drop-shadow(0 0 0.15rem)
 }
 
 #lesFilochesMapCard {
@@ -343,6 +522,7 @@ Here start the map's css
   padding-block: 0.5rem;
   padding-inline: 0.5rem;
   border-radius: 5px;
+
 }
 
 #lesFilochesMapCard.active {
@@ -359,7 +539,7 @@ Here start the map's css
   top: 27%;
   left: 42.5%;
   z-index: 2;
-  filter: drop-shadow(0 0 0.15rem);
+  filter: drop-shadow(0 0 0.15rem)
 }
 
 #kiosqueMapCard {
@@ -372,6 +552,7 @@ Here start the map's css
   padding-block: 0.5rem;
   padding-inline: 0.5rem;
   border-radius: 5px;
+
 }
 
 #kiosqueMapCard.active {
@@ -382,13 +563,14 @@ Here start the map's css
   display: none;
 }
 
+
 #carrefourCity-pin {
   position: absolute;
   width: 10%;
   top: 30.5%;
   left: 58.9%;
   z-index: 2;
-  filter: drop-shadow(0 0 0.15rem);
+  filter: drop-shadow(0 0 0.15rem)
 }
 
 #carrefourCityMapCard {
@@ -401,6 +583,7 @@ Here start the map's css
   padding-block: 0.5rem;
   padding-inline: 0.5rem;
   border-radius: 5px;
+
 }
 
 #carrefourCityMapCard.active {
@@ -417,7 +600,7 @@ Here start the map's css
   top: 13%;
   left: 58.9%;
   z-index: 2;
-  filter: drop-shadow(0 0 0.15rem);
+  filter: drop-shadow(0 0 0.15rem)
 }
 
 #rotisseurMapCard {
@@ -430,6 +613,7 @@ Here start the map's css
   padding-block: 0.5rem;
   padding-inline: 0.5rem;
   border-radius: 5px;
+
 }
 
 #rotisseurMapCard.active {
@@ -446,7 +630,7 @@ Here start the map's css
   top: 36.5%;
   left: 57.9%;
   z-index: 2;
-  filter: drop-shadow(0 0 0.15rem);
+  filter: drop-shadow(0 0 0.15rem)
 }
 
 #map-pin {
@@ -454,28 +638,31 @@ Here start the map's css
 }
 
 #malabar-map-pin {
-  width: 1.5rem;
+  width: 1.5rem
 }
 
 #filoches-map-pin {
-  width: 1.5rem;
+  width: 1.5rem
 }
 
 #kiosque-map-pin {
-  width: 1.5rem;
+  width: 1.5rem
 }
 
 #carrefourCity-map-pin {
-  width: 1.5rem;
+  width: 1.5rem
 }
 
 #logoWE-map-pin {
-  width: 1rem;
+  width: 1rem
 }
 
 #rotisseur-map-pin {
-  width: 1.5rem;
+  width: 1.5rem
 }
+
+
+
 
 #localisation {
   display: flex;
@@ -499,7 +686,9 @@ Here start the map's css
 Here end the map's css
  */
 
+
 @media screen and (max-width: 320px) {
+
   #nav {
     justify-content: space-around;
   }
@@ -509,10 +698,13 @@ Here end the map's css
     left: -100%;
     top: 2vh;
     transition: 0.25s;
+
   }
+
 
   #icons {
     display: block;
+
   }
 
   #icons::before {
@@ -532,6 +724,7 @@ Here end the map's css
 }
 
 @media screen and (min-width: 321px) and (max-width: 768px) {
+
   main {
     padding-inline: 3rem;
   }
@@ -547,21 +740,25 @@ Here end the map's css
     transition: 0.25s;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #e26d5c;
+    background-color: #E26D5C;
     width: 100%;
     text-align: center;
     font-size: 1.5rem;
     height: 40%;
   }
 
+
+
   #icons {
     display: block;
     padding-top: 0;
+
   }
 
   #icons:before {
     content: "\2630";
     font-size: 2.2rem;
+
   }
 
   .active #icons:before {
@@ -572,42 +769,22 @@ Here end the map's css
   .active ul {
     left: 0;
   }
+
   .card {
     width: 90%;
     height: auto;
   }
-
-  /* footer */
-  .footButtons {
-    height: 1.5rem;
-  }
 }
+
+/* footer */
+.footButtons {
+  height: 1.5rem;
+}
+
 
 footer p {
   text-align: center;
-  color: #f8dca6;
+  color: #F8DCA6;
   font-size: small;
   padding: 2px;
-}
-
-@media screen and (min-width: 769px) {
-  main {
-    padding-inline: 6rem;
-  }
-
-  .aboutUs {
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    padding-inline: 0;
-    width: 65ch;
-    flex-wrap: wrap;
-  }
-
-  .card {
-    width: 90%;
-    height: auto;
-  }
 }
