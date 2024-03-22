@@ -36,7 +36,7 @@ let restaurants = [{
 },
 {
     name: "Le kiosque",
-    type: "asiatique",
+    type: "Asiatique",
     adress:"77 Allée Forain-François Verdier, 31000 Toulouse",
     itinerary:"https://www.google.com/maps/dir//77+All.+Forain-Fran%C3%A7ois+Verdier,+31000+Toulouse/@43.5968365,1.3699023,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12aebc859c7ecc03:0x568c00fa0109c281!2m2!1d1.4523084!2d43.5968283?entry=ttu",
     description:"Pour les Fins gourmet de restaurant asiatique vous avez le Kiosque",
