@@ -1,14 +1,15 @@
 
 
 function filterRestaurant(type) {
-    const restaurants = document.querySelectorAll('.restaurant');
+    const restaurants = document.querySelectorAll('.restaurants');
 
-    restaurants.forEach((restaurant) => {
-        restaurant.style.display = 'none'; // Masque tous les restaurants par défaut
+    restaurants.forEach((restaurants) => {
+        restaurants.style.display = 'none'; // Masque tous les restaurants par défaut
 
         if (type === 'all' || restaurant.classList.contains(type)) {
-            restaurant.style.display = 'block'; // Affiche les restaurants correspondants au filtre sélectionné
+            restaurants.style.display = 'block'; // Affiche les restaurants correspondants au filtre sélectionné
         }
     });
 }
+
 
