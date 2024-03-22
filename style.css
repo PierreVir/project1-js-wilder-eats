@@ -81,24 +81,51 @@ main {
 }
 
 .restaurants {
+  margin-top: 10px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.restaurant-card {
+  height: 299px;
+  width: 100%;
+  max-width: 350px;
+  background-color: #e26d5c;
+  border-radius: 10px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.restaurant {
-  height: 299px;
-  width: 100%;
-  margin-bottom: 20px;
-  background-color: #e26d5c;
+  padding-bottom: 1rem;
+  gap: 1rem;
   border-radius: 20px;
   box-shadow: 1px 3px 3px 1px black;
+  margin: 10px;
 }
 
+.restaurant-img {
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/burger\ \ Tests.jpg");
+  height: 240px;
+  width: 100%;
+}
+
+.restaurant-title {
+  color: black;
+  padding: 0;
+}
+
+.restaurant-button {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  background-color: lightblue;
+  width: calc(100% - 2rem);
+}
+
+/* navbar */
 #logo {
   width: 50px;
   height: 50px;
@@ -115,6 +142,7 @@ main {
   align-items: center;
   font-size: calc(0.5rem + 1vw);
   padding-right: 2rem;
+  z-index: 3;
 }
 
 #icons {
@@ -172,6 +200,24 @@ main {
 
 /* navbar end */
 
+/* searchbar */
+.search input[type="text"] {
+  width: 200px;
+  height: 25px;
+  border-radius: 25px;
+  border: none;
+}
+
+.search button {
+  background-color: #fbdfa8;
+  color: #e26d5c;
+  border: none;
+  cursor: pointer;
+  font-size: large;
+}
+
+/* searchbar end */
+
 /* main - Card */
 .mapImage {
   height: 16rem;
@@ -208,6 +254,397 @@ main {
   align-items: center;
 }
 
+/**********************************/
+/* Here start the modal's css */
+/**********************************/
+
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal {
+  border-radius: 2em;
+  padding: 1em;
+  margin: 20px;
+  background-color: var(--tertiary-color);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.aboutUs {
+  padding-block: 1rem;
+}
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: var(--secondary-color);
+}
+
+.placeholder-title {
+  position: absolute;
+  top: 4%;
+  left: 13%;
+  color: var(--placeholder);
+  font-family: Arial;
+}
+
+.firstInput-container {
+  width: 100%;
+
+  & input {
+    padding-left: 1em;
+  }
+}
+
+& input::placeholder {
+  color: #00000075;
+}
+
+.secondInput-container {
+  position: relative;
+  width: 100%;
+
+  & input::placeholder {
+    position: absolute;
+    top: 4%;
+    left: 10%;
+  }
+}
+
+.write-opinion-note {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.write-opinion-logo {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 4%;
+  top: 5%;
+}
+
+.firstInput {
+  width: 40%;
+  border-radius: 8px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.secondInput {
+  height: 150px;
+  border-radius: 1em;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 100%;
+  padding-left: 1em;
+  padding-top: 2em;
+}
+
+.secondInput:active {
+  margin-bottom: 3em;
+}
+
+.btn-right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.btn-opinion {
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 1em;
+  border: none;
+  padding: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 35%;
+}
+
+.img-container-modal {
+  position: relative;
+}
+
+.img-modal {
+  height: 150px;
+  width: 100%;
+  border-radius: 1em;
+  object-fit: cover;
+}
+
+.heart-icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 5%;
+  right: 5%;
+}
+
+/* 
+Here start the map's css
+ */
+
+#localisation {
+  display: flex;
+  flex-direction: column;
+}
+
+#localisation-flex {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10%;
+  gap: 20px;
+}
+
+#map-wrapper {
+  overflow: hidden;
+  width: 90vw;
+  max-width: max-content;
+  aspect-ratio: 16/9;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px 5px;
+  scroll-behavior: initial;
+}
+
+#movable-map {
+  max-width: max-content;
+}
+
+#map {
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+
+#mapImage {
+  width: 819px;
+}
+
+#malabar-pin {
+  position: absolute;
+  top: 80%;
+  left: 5.8%;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.15rem);
+}
+
+#malabarMapCard {
+  display: none;
+  width: max-content;
+  background-color: rgb(255, 181, 154);
+  position: absolute;
+  top: -95%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 5px;
+}
+
+#malabarMapCard.active {
+  display: block;
+}
+
+#malabarMapCard.inactive {
+  display: none;
+}
+
+#lesFiloches-pin {
+  position: absolute;
+  width: 10%;
+  top: 82%;
+  left: 25.5%;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.15rem);
+}
+
+#lesFilochesMapCard {
+  display: none;
+  width: max-content;
+  background-color: rgb(255, 181, 154);
+  position: absolute;
+  top: 100%;
+  left: -45%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 5px;
+}
+
+#lesFilochesMapCard.active {
+  display: block;
+}
+
+#lesFilochesMapCard.inactive {
+  display: none;
+}
+
+#kiosque-pin {
+  position: absolute;
+  width: 10%;
+  top: 27%;
+  left: 42.5%;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.15rem);
+}
+
+#kiosqueMapCard {
+  display: none;
+  width: max-content;
+  background-color: rgb(255, 181, 154);
+  position: absolute;
+  top: -95%;
+  left: -37%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 5px;
+}
+
+#kiosqueMapCard.active {
+  display: block;
+}
+
+#kiosqueMapCard.inactive {
+  display: none;
+}
+
+#carrefourCity-pin {
+  position: absolute;
+  width: 10%;
+  top: 30.5%;
+  left: 58.9%;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.15rem);
+}
+
+#carrefourCityMapCard {
+  display: none;
+  width: max-content;
+  background-color: rgb(255, 181, 154);
+  position: absolute;
+  top: -95%;
+  left: -50%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 5px;
+}
+
+#carrefourCityMapCard.active {
+  display: block;
+}
+
+#carrefourCityMapCard.inactive {
+  display: none;
+}
+
+#rotisseur-pin {
+  position: absolute;
+  width: 10%;
+  top: 13%;
+  left: 58.9%;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.15rem);
+}
+
+#rotisseurMapCard {
+  display: none;
+  width: max-content;
+  background-color: rgb(255, 181, 154);
+  position: absolute;
+  top: -95%;
+  left: -40%;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 5px;
+}
+
+#rotisseurMapCard.active {
+  display: block;
+}
+
+#rotisseurMapCard.inactive {
+  display: none;
+}
+
+#logoWE-pin {
+  position: absolute;
+  width: 10%;
+  top: 36.5%;
+  left: 57.9%;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.15rem);
+}
+
+#map-pin {
+  width: 1.5rem;
+}
+
+#malabar-map-pin {
+  width: 1.5rem;
+}
+
+#filoches-map-pin {
+  width: 1.5rem;
+}
+
+#kiosque-map-pin {
+  width: 1.5rem;
+}
+
+#carrefourCity-map-pin {
+  width: 1.5rem;
+}
+
+#logoWE-map-pin {
+  width: 1rem;
+}
+
+#rotisseur-map-pin {
+  width: 1.5rem;
+}
+
+#localisation {
+  display: flex;
+  flex-direction: column;
+}
+
+#localisation-flex {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10%;
+  gap: 20px;
+}
+
+.prevent-select {
+  user-select: none;
+}
+
+/* 
+Here end the map's css
+ */
+
 @media screen and (max-width: 320px) {
   #nav {
     justify-content: space-around;
@@ -241,6 +678,10 @@ main {
 }
 
 @media screen and (min-width: 321px) and (max-width: 768px) {
+  main {
+    padding-inline: 3rem;
+  }
+
   #nav {
     justify-content: space-around;
   }
@@ -276,6 +717,39 @@ main {
 
   .active ul {
     left: 0;
+  }
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  /* footer */
+  .footButtons {
+    height: 1.5rem;
+  }
+}
+
+footer p {
+  text-align: center;
+  color: #f8dca6;
+  font-size: small;
+  padding: 2px;
+}
+
+@media screen and (min-width: 769px) {
+  main {
+    padding-inline: 6rem;
+  }
+
+  .aboutUs {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 0;
+    width: 65ch;
+    flex-wrap: wrap;
   }
 
   .card {
